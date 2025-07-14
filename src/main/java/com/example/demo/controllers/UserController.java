@@ -13,11 +13,6 @@ import java.util.Optional;
 @RequestMapping("/api/users")
 public class UserController {
 
-    @GetMapping("/sayhi")
-    public ResponseEntity<String> sayHi() {
-        return ResponseEntity.ok("hello");
-    }
-
     @Autowired
     private UserRepository userRepo;
 
